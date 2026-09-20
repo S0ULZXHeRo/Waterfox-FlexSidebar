@@ -47,15 +47,9 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 *Sidebar pins and page content smoothly shifts right.*
 <img width="800" height="431" alt="pinned" src="https://github.com/user-attachments/assets/83672c43-c96c-47bb-8a85-5a94de0ab54e" />
 
-
-
-
-
-
-
 ---
 
-### 🛠️ Additional UI Polish & Fixes
+## 🛠️ Additional UI Polish & Fixes
 
 * **Container Menu Cleanup:** Stripped the redundant native "New Tab" option from the tab strip `+` menu, leaving a clean, dedicated Container selection panel.
 <table>
@@ -375,6 +369,6 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 
 ---
 
-📜 License
+## 📜 License
 
 This project is licensed under the [MIT License](https://mit-license.org/).
