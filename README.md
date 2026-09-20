@@ -294,9 +294,11 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
   display: none !important;
 }
 ```
+
 </details>
+
 4. Save.
-5. Now download [sidebar-pin.uc.js](sidebar-pin.uc.js) and paste it into the `JS` folder (`...\chrome\JS) or create it yourself with the exact name and paste the following code.
+5. Now download [sidebar-pin.uc.js](sidebar-pin.uc.js) and paste it into the `JS` folder (`...\chrome\JS`) or create it yourself with the exact name and paste the following code.
 <details>
 <summary><b>Click to view sidebar-pin.uc.js code</b></summary>
   
@@ -324,7 +326,13 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
   }, true);
 })();
 ```
+
 </details>
+
+6. Save.
+7. Restart Waterfox completely to initialize the bootstrap loader and apply the scripts and styling.
+
+* *💡 **Customizing the Hotkey:** You can edit the keybinding at any time by opening sidebar-pin.uc.js in a text editor and modifying the key code logic near the bottom of the file.*
 
 ---
 
@@ -332,5 +340,13 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 
 ```text
 ├── userChrome.css       # Controls hover transitions, layout shifts, shadows, and page reflow
-├── sidebar-pin.uc.js    # Listens for Ctrl + / hotkey and toggles the [sidebar-pinned] state
+├── sidebar-pin.uc.js    # Listens for Alt + , hotkey and toggles the [sidebar-pinned] state
 └── README.md            # Documentation and setup instructions
+```
+---
+
+## 🤝 Notes & Disclaimer
+
+* **AI-Assisted Code:** Both `userChrome.css` and `sidebar-pin.uc.js` were built entirely with AI assistance to fit my personal workflow. I am not an experienced developer myself, but I am sharing this project publicly in case anyone else finds it useful or wants to build upon it!
+* **Bugs & Edge Cases:** Since this hasn't been tested across every single Firefox extension or layout setup, you might encounter visual bugs or glitches. 
+* **Contributions & Issues:** Feel free to open an **Issue** if you hit a bug, or submit a **Pull Request** if you have a fix or improvement to share. Community contributions and fixes are greatly appreciated!
