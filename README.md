@@ -372,5 +372,5 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 ---
 
 ## 📜 License
-
 This project is licensed under the [MIT License](https://mit-license.org/).
+If you use or adapt these styles/scripts in your own setup or share them elsewhere, please provide a link back to this original repository.
