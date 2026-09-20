@@ -1,4 +1,3 @@
-<img src="https://github.com/user-attachments/assets/df59e60c-840c-4b40-89f5-762a71d71277" width="100" />
 # 🦊Waterfox - FlexSidebar
 
 ![Waterfox](https://img.shields.io/badge/Waterfox-Supported-005FB8?style=flat-square&logo=firefox)
@@ -44,6 +43,35 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
   * **Pinned Mode (Deep Work):** Locks the sidebar open with a quick hotkey (`Alt + ,`) for seamless side-by-side multitasking when actually needed.
 * **Opera-Inspired UI Maturity:** Built with inspiration from Opera’s sidebar ecosystem that is widely considered a benchmark for intuitive, modern browser layout design.
 * **Enhanced Aesthetics & UX:** Designed to modernize the interface, streamline daily interaction, and deliver a cleaner, distraction-free browsing experience.
+
+---
+
+## 🛠️ Installation & Prerequisites
+
+Follow these steps from scratch to get the dynamic FlexSidebar script working.
+### 1. Enable Custom CSS/JS Support in Waterfox
+By default, Firefox and Waterfox ignore custom UI stylesheets and scripts. You must enable user customization settings first:
+1. Open a new tab, type `about:config` in the address bar, and press **Enter**.
+2. Click **Accept the Risk and Continue**.
+3. In the search box at the top, look for the following preference:
+```toolkit.legacyUserProfileCustomizations.stylesheets```
+4. Double-click it (or click the toggle button) to set its value to `true`.
+
+### 2. Locate Your Profile Directory
+1. Open a new tab and go to `about:support`.
+2. Find the Profile Folder entry under Application Basics.
+3. Click Open Folder (or Show in Finder on macOS). This opens your active Waterfox profile directory.
+
+### 3. Install userChrome.js Loader (For Script Support)
+Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript, you need a loader to run custom JS files:
+1. Download/extract a standard `userChrome.js` bootstrap script (such as fx-autoconfig or userChromeJS). I recommend [fx-autoconfig](https://github.com/MrOtherGuy/fx-autoconfig).
+2. Copy the contents of `Programs` folder and paste them into your root Waterfox installation folder (`C:\Program Files\Waterfox`).
+3. Copy the `chrome` folder from `Profile` folder and paste it into your Waterfox Default Profile folder (`C:\Users\YOUR USERNAME\AppData\Roaming\Waterfox\Profiles\YOUR PROFILE.default-release`).
+
+### 4. Add the Custom Script & Styling
+1. Open your profile directory's `chrome` folder (`.../Profiles/<your-profile>/chrome/`).
+2. Download the [userChrome.css](Create a file named `userChrome.css`. Make sure the extension is `.css` and not `.txt`.
+3. Paste the sidebar hover-reveal and positioning styles into `userChrome.css` and save.
 
 ---
 
