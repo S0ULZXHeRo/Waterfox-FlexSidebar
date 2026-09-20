@@ -1,4 +1,4 @@
-/* 1. Strip cyan focus outline and default breakout styling */
+/* Strip cyan focus outline, default breakout styling, and focus shadow */
 #urlbar[breakout][breakout-extend],
 #urlbar[breakout][breakout-extend] > #urlbar-background,
 #urlbar-input-container,
@@ -13,18 +13,6 @@
   --toolbar-field-focus-border-color: transparent !important;
   --focus-outline-color: transparent !important;
 }
-
-#urlbar[focused="true"] > #urlbar-background,
-#urlbar[breakout][breakout-extend] > #urlbar-background {
-  background-color: #2a2d34 !important;
-  border: 1px solid #4a4d56 !important;
-  border-radius: 8px !important;
-}
-
-#urlbar[focused="true"] #urlbar-input-container {
-  background-color: transparent !important;
-}
-
 /* --- MAIN SIDEBAR ICON RAIL --- */
 #sidebar-container,
 .browser-sidebar-container,
@@ -90,9 +78,8 @@
   will-change: margin-left, transform !important;
 }
 
-/* --- EXTENSION-ONLY WIDE LAYOUT (ChatGPT) --- */
-#sidebar-box[sidebarcommand*="-sidebar-action"],
-#sidebar-box[sidebarcommand*="1dfca91d-ca11-46c7-b775-cf5cf18ff17d"] {
+/* --- EXTENSION-ONLY WIDE LAYOUT (ChatGPT etc) --- */
+#sidebar-box[sidebarcommand*="-sidebar-action"] {
   width: 700px !important;
   min-width: 500px !important;
 }
@@ -168,7 +155,6 @@
 #sidebar-splitter {
   display: none !important;
 }
-/* --- SCENARIO 2: PINNED STATE OVERRIDES (TRIGGERED BY SCRIPT) --- */
 
 /* Lock Rail Open & Retain Rail Shadow */
 #main-window[sidebar-pinned="true"] #sidebar-main,
@@ -183,4 +169,9 @@
   margin-left: 0px !important;
   pointer-events: auto !important;
   box-shadow: 8px 0 24px rgba(0, 0, 0, 0.5) !important;
+}
+/* Remove redundant "New Tab" item and its separator from Container popup */
+#new-tab-button-popup > menuitem:first-of-type,
+#new-tab-button-popup > menuseparator:first-of-type {
+  display: none !important;
 }
