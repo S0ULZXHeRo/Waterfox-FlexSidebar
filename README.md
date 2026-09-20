@@ -21,6 +21,22 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
+## 📸 Visual Preview
+
+* ### Hover-Reveal Mode (Default)
+*Sidebar slides out as an overlay when hovering the left screen edge.*
+<video src="https://github.com/user-attachments/assets/b299ae7a-ccf2-44d4-964d-5fc65086ae77" width="100%" autoplay loop muted playsinline></video>
+
+* ### Pinned Mode (`Alt + ,`)
+*Sidebar pins and page content smoothly shifts right.*
+<img src="https://github.com/user-attachments/assets/df59e60c-840c-4b40-89f5-762a71d71277" width="100%" />
+
+
+
+
+
+---
+
 ### 🛠️ Additional misc UI Polish & Fixes
 * **Container Menu Cleanup:** Stripped the redundant native "New Tab" option from the tab strip `+` menu, leaving a clean, dedicated Container selection panel.
 <table>
@@ -49,18 +65,6 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
     </td>
   </tr>
 </table>
-
----
-
-## 📸 Visual Preview
-
-* ### Hover-Reveal Mode (Default)
-*Sidebar slides out as an overlay when hovering the left screen edge.*
-<img src="https://github.com/user-attachments/assets/06419007-cc96-4fc1-8747-ac33c4655a64" width="100%" />
-
-* ### Pinned Mode (`Alt + ,`)
-*Sidebar pins and page content smoothly shifts right.*
-<img src="https://github.com/user-attachments/assets/df59e60c-840c-4b40-89f5-762a71d71277" width="100%" />
 
 ---
 
