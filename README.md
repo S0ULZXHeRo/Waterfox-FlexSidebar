@@ -1,3 +1,5 @@
+<img width="500" height="269" alt="hover" src="https://github.com/user-attachments/assets/b871ee1a-b73b-41d4-9914-c3a19fc6a03e" />
+
 # 🦊Waterfox - FlexSidebar
 
 ![Waterfox](https://img.shields.io/badge/Waterfox-Supported-005FB8?style=flat-square&logo=firefox)
