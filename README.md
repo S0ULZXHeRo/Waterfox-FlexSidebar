@@ -347,6 +347,12 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 
 ## 🤝 Notes & Disclaimer
 
-* **AI-Assisted Code:** Both `userChrome.css` and `sidebar-pin.uc.js` were built entirely with AI assistance to fit my personal workflow. I am not an experienced developer myself, but I am sharing this project publicly in case anyone else finds it useful or wants to build upon it!
+* **AI-Assisted Code:** Both `userChrome.css` and `sidebar-pin.uc.js` were built entirely with AI assistance to fit my personal workflow. I am not an experienced developer myself, but I'm sharing this publicly in the spirit of open-source—hoping it helps others, serves a good purpose, or gives someone a solid starting point to build upon!
 * **Bugs & Edge Cases:** Since this hasn't been tested across every single Firefox extension or layout setup, you might encounter visual bugs or glitches. 
-* **Contributions & Issues:** Feel free to open an **Issue** if you hit a bug, or submit a **Pull Request** if you have a fix or improvement to share. Community contributions and fixes are greatly appreciated!
+* **Contributions & Issues:** If you spot a bug or know a way to optimize the layout/script, **Pull Requests and fixes are always greatly appreciated!** Any improvements will help keep this running smoothly for everyone using it. 
+
+---
+
+📜 License
+
+This project is licensed under the [MIT License](https://mit-license.org/).
