@@ -28,7 +28,7 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 *Sidebar slides out as an overlay when hovering the left screen edge.*
 <img src="https://github.com/user-attachments/assets/06419007-cc96-4fc1-8747-ac33c4655a64" width="100%" />
 
-* ### Pinned Mode (`Ctrl + /`)
+* ### Pinned Mode (`Alt + ,`)
 *Sidebar pins and page content smoothly shifts right.*
 <img src="https://github.com/user-attachments/assets/df59e60c-840c-4b40-89f5-762a71d71277" width="100%" />
 
@@ -38,11 +38,12 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 * **Reclaims Screen Real Estate:** Standard browser sidebar permanently took up valuable webpage width by default. Hover-reveal lets you keep 100% of your screen available for content until you actually need the sidebar.
 * **Fills a Native UI Gap:** Waterfox lacks built-in auto-hide functionality for the sidebar (restricting auto-hide feature primarily to vertical tabs). This implementation fills that missing gap in the native UI.
-* **Faster Workflow via Hotkeys:** Toggling and pinning via hotkeys (`Ctrl + /`) eliminates redundant mouse movements to static toolbar icons.
+* **Faster Workflow via Hotkeys:** Toggling and pinning via hotkeys (`Alt + ,`) eliminates redundant mouse movements to static toolbar icons.
 * **Flexible Multitasking (Hover vs. Pin):**
   * **Hover-Reveal (Quick Actions):** Automatically slides open when moving the cursor to the screen edge and closes the moment the cursor leaves, keeping browsing fluid.
-  * **Pinned Mode (Deep Work):** Instantly locks the panel open for continuous side-by-side multitasking without auto-closing.
-* **Opera-Inspired UX:** Drawing design cues from Opera's sidebar implementation to bring modern, flexible layout mechanics to the browser.
+  * **Pinned Mode (Deep Work):** Locks the sidebar open with a quick hotkey (`Alt + ,`) for seamless side-by-side multitasking when actually needed.
+* **Opera-Inspired UI Maturity:** Built with inspiration from Opera’s sidebar ecosystem that is widely considered a benchmark for intuitive, modern browser layout design.
+* **Enhanced Aesthetics & UX:** Designed to modernize the interface, streamline daily interaction, and deliver a cleaner, distraction-free browsing experience.
 
 ---
 
