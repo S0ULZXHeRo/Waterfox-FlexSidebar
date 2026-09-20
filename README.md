@@ -1,4 +1,4 @@
-<img width="500" height="269" alt="hover" src="https://github.com/user-attachments/assets/b871ee1a-b73b-41d4-9914-c3a19fc6a03e" />
+
 
 # 🦊Waterfox - FlexSidebar
 
@@ -27,7 +27,7 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 * ### Hover-Reveal Mode (Default)
 *Sidebar slides out as an overlay when hovering the left screen edge.*
-<video src="https://github.com/user-attachments/assets/b299ae7a-ccf2-44d4-964d-5fc65086ae77" width="100%" autoplay loop muted playsinline></video>
+<img width="800" height="431" alt="hover" src="https://github.com/user-attachments/assets/5df61d73-f6fe-4063-9a9b-879bf5eb8a57" />
 
 * ### Pinned Mode (`Alt + ,`)
 *Sidebar pins and page content smoothly shifts right.*
