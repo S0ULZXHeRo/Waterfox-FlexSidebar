@@ -12,6 +12,20 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
+# 📋 Table of Contents
+
+- [Key Features](#-key-features)
+- [Visual Preview](#-visual-preview)
+- [Additional UI Polish & Fixes](#-additional-ui-polish--fixes)
+- [Motivation & Design Philosophy](#-motivation--design-philosophy)
+- [Installation & Prerequisites](#-installation--prerequisites)
+- [Repository Structure](#-repository-structure)
+- [Known Issues](#-known-issues)
+- [Notes & Disclaimer](#-notes--disclaimer)
+- [License](#-license)
+
+---
+
 ## ✨ Key Features
 
 * 🖱️ **Hover-Reveal Mode (Default):** Keeps the icon rail (sidebar) off-screen. Hovering your cursor over the left edge slides out the sidebar overlay without disrupting your webpage layout.
@@ -41,7 +55,8 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
-### 🛠️ Additional misc UI Polish & Fixes
+### 🛠️ Additional UI Polish & Fixes
+
 * **Container Menu Cleanup:** Stripped the redundant native "New Tab" option from the tab strip `+` menu, leaving a clean, dedicated Container selection panel.
 <table>
   <tr>
@@ -343,6 +358,13 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 ├── sidebar-pin.uc.js    # Listens for Alt + , hotkey and toggles the [sidebar-pinned] state
 └── README.md            # Documentation and setup instructions
 ```
+
+---
+
+## 🐛 Known Issues
+
+* **Browser Addon Themes:** Enabling any custom Firefox or Waterfox browser theme (or add-on theme) turns the sidebar/icon rail transparent. The functionality and shortcuts remain fully operational, but visual background alignment breaks. It is recommended to use standard/default themes.
+
 ---
 
 ## 🤝 Notes & Disclaimer
