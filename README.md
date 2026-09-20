@@ -12,7 +12,7 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
-# 📋 Table of Contents
+# 📋 Table of Content
 
 - [Key Features](#-key-features)
 - [Visual Preview](#-visual-preview)
