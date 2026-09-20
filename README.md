@@ -111,8 +111,190 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 
 ### 4. Add the Custom Script & Styling
 1. Open your profile directory's `chrome` folder (`.../Profiles/<your-profile>/chrome/`).
-2. Download the [userChrome.css](Create a file named `userChrome.css`. Make sure the extension is `.css` and not `.txt`.
-3. Paste the sidebar hover-reveal and positioning styles into `userChrome.css` and save.
+2. Download the [userChrome.css](userChrome.css) file or create a file yourself named `userChrome.css` and paste the following code. Make sure the extension is `.css` and not `.txt`.
+<details>
+<summary><b>Click to view userChrome.css code</b></summary>
+  
+```css
+/* Strip cyan focus outline, default breakout styling, and focus shadow */
+#urlbar[breakout][breakout-extend],
+#urlbar[breakout][breakout-extend] > #urlbar-background,
+#urlbar-input-container,
+#urlbar[focused="true"] > #urlbar-background {
+  outline: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#urlbar {
+  --urlbar-focused-border-color: transparent !important;
+  --toolbar-field-focus-border-color: transparent !important;
+  --focus-outline-color: transparent !important;
+}
+/* --- MAIN SIDEBAR ICON RAIL --- */
+#sidebar-container,
+.browser-sidebar-container,
+#sidebar-main {
+  position: fixed !important;
+  top: 94px !important;
+  bottom: auto !important;
+  left: 4px !important;
+  height: calc(100vh - 98px) !important;
+  z-index: 100000 !important;
+  overflow: visible !important;
+  border-radius: 10px !important;
+  contain: none !important;
+  
+  transform: translateX(calc(-100% - 12px)) !important;
+  transition: transform 0.50s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* Hit-area edge trigger - Tight trigger area when closed */
+#sidebar-container::before,
+.browser-sidebar-container::before,
+#sidebar-main::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: -15px !important;
+  height: 100% !important;
+  background: transparent !important;
+  pointer-events: auto !important;
+}
+
+/* FIX: Stretches trigger back to the screen edge when opened so cursor never loses hover */
+#sidebar-container:hover::before,
+.browser-sidebar-container:hover::before,
+#sidebar-main:hover::before {
+  left: -100px !important;
+}
+
+/* --- SUB-PANEL BASE SETUP --- */
+#sidebar-box {
+  position: fixed !important;
+  top: 94px !important;
+  left: 62px !important;
+  height: calc(100vh - 98px) !important;
+  z-index: 99999 !important;
+  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 10px !important;
+  contain: none !important;
+  
+  /* DEFAULT NATIVE SIDEBAR WIDTH */
+  width: 300px !important;
+  min-width: 280px !important;
+  
+  /* RETRACTED STATE */
+  margin-left: -800px !important;
+  opacity: 1 !important; 
+  pointer-events: none !important;
+  
+  transition: margin-left 0.50s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.50s cubic-bezier(0.25, 1, 0.5, 1),
+              pointer-events 0s linear 0.50s !important;
+  will-change: margin-left, transform !important;
+}
+
+/* --- EXTENSION-ONLY WIDE LAYOUT (ChatGPT etc) --- */
+#sidebar-box[sidebarcommand*="-sidebar-action"] {
+  width: 700px !important;
+  min-width: 500px !important;
+}
+
+#sidebar-box #sidebar {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+/* --- SCENARIO 1: SYNCHRONIZED HOVER REVEAL --- */
+
+/* 1. Reveal RAIL on hover */
+#sidebar-main:hover,
+#sidebar-container:hover,
+.browser-sidebar-container:hover,
+:has(> #sidebar-box:hover) #sidebar-main,
+:has(> #sidebar-box:hover) #sidebar-container,
+:has(> #sidebar-box:hover) .browser-sidebar-container {
+  transform: translateX(0) !important;
+  box-shadow: 6px 0 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 2. Reveal SUBPANEL smoothly on hover */
+#sidebar-main:hover ~ #sidebar-box,
+#sidebar-container:hover ~ #sidebar-box,
+.browser-sidebar-container:hover ~ #sidebar-box,
+#sidebar-box:hover {
+  margin-left: 0px !important;
+  pointer-events: auto !important;
+  
+  transition: margin-left 0.50s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.50s cubic-bezier(0.25, 1, 0.5, 1),
+              pointer-events 0s linear 0s !important;
+}
+
+/* --- SCENARIO 2: PINNED STATE OVERRIDES (TRIGGERED BY SCRIPT) --- */
+
+/* Lock Rail Open */
+#main-window[sidebar-pinned="true"] #sidebar-main,
+#main-window[sidebar-pinned="true"] #sidebar-container,
+#main-window[sidebar-pinned="true"] .browser-sidebar-container {
+  transform: translateX(0) !important;
+}
+
+/* Lock Subpanel Open */
+#main-window[sidebar-pinned="true"] #sidebar-box {
+  margin-left: 0px !important;
+  pointer-events: auto !important;
+}
+
+/* Adjust webpage body margin so page reflows/resizes to fit */
+#main-window[sidebar-pinned="true"] #appcontent,
+#main-window[sidebar-pinned="true"] #tabbrowser-tabbox {
+  margin-left: 362px !important; /* Rail (62px) + Standard Subpanel (300px) */
+  transition: margin-left 0.50s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* Adjust webpage body margin when wide panels (ChatGPT) are pinned */
+#main-window[sidebar-pinned="true"]:has(#sidebar-box[sidebarcommand*="-sidebar-action"]) #appcontent,
+#main-window[sidebar-pinned="true"]:has(#sidebar-box[sidebarcommand*="-sidebar-action"]) #tabbrowser-tabbox {
+  margin-left: 762px !important; /* Rail (62px) + Wide Subpanel (700px) */
+}
+
+/* Page content margin overrides when unpinned (Hover mode) */
+#sidebar-box ~ #tabbrowser-tabbox,
+#sidebar-box ~ #appcontent {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  transition: margin-left 0.50s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+#sidebar-launcher-splitter,
+#sidebar-splitter {
+  display: none !important;
+}
+
+/* Lock Rail Open & Retain Rail Shadow */
+#main-window[sidebar-pinned="true"] #sidebar-main,
+#main-window[sidebar-pinned="true"] #sidebar-container,
+#main-window[sidebar-pinned="true"] .browser-sidebar-container {
+  transform: translateX(0) !important;
+  box-shadow: 6px 0 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Lock Subpanel Open & Retain Panel Shadow */
+#main-window[sidebar-pinned="true"] #sidebar-box {
+  margin-left: 0px !important;
+  pointer-events: auto !important;
+  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.5) !important;
+}
+/* Remove redundant "New Tab" item and its separator from Container popup */
+#new-tab-button-popup > menuitem:first-of-type,
+#new-tab-button-popup > menuseparator:first-of-type {
+  display: none !important;
+}
+```
+4. Paste the sidebar hover-reveal and positioning styles into `userChrome.css` and save.
 
 ---
 
