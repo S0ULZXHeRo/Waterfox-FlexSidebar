@@ -1,6 +1,4 @@
-# Waterfox---FlexSidebar
-A lightweight, clean CSS and JavaScript modification for Waterfox and Firefox that adds a flexible dual-mode sidebar.   It allows you to keep your workspace minimal by revealing the sidebar on hover, or permanently pin it with page reflow using a simple keyboard shortcut.
-# 🦊 Waterfox & Firefox Dual-Mode Sidebar
+# 🦊Waterfox - FlexSidebar
 
 ![Waterfox](https://img.shields.io/badge/Waterfox-Supported-005FB8?style=flat-square&logo=firefox)
 ![Firefox](https://img.shields.io/badge/Firefox-Supported-FF7139?style=flat-square&logo=firefox-browser)
@@ -14,11 +12,13 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ## 📸 Visual Preview
 
-> **Note:** Insert a short GIF or screenshot of your sidebar in action here!
+* ### Hover-Reveal Mode (Default)
+*Sidebar slides out as an overlay when hovering the left screen edge.*
+<img src="https://github.com/user-attachments/assets/06419007-cc96-4fc1-8747-ac33c4655a64" width="100%" />
 
-| **Hover-Reveal Mode (Default)** | **Pinned Mode (`Ctrl + /`)** |
-| :---: | :---: |
-| *Sidebar slides out as an overlay when hovering the left screen edge.* | *Sidebar locks open and page content smoothly shifts right.* |
+* ### Pinned Mode (`Ctrl + /`)
+*Sidebar locks open and page content smoothly shifts right.*
+
 
 ---
 
