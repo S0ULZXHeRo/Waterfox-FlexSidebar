@@ -31,7 +31,8 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 * ### Pinned Mode (`Alt + ,`)
 *Sidebar pins and page content smoothly shifts right.*
-<img width="720" height="387" alt="pinned" src="https://github.com/user-attachments/assets/9817c1ff-a48a-4385-a486-c92ae6e5e0a3" />
+<img width="800" height="431" alt="pinned" src="https://github.com/user-attachments/assets/83672c43-c96c-47bb-8a85-5a94de0ab54e" />
+
 
 
 
