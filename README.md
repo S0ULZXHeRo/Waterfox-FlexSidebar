@@ -110,8 +110,8 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 3. Copy the `chrome` folder from `Profile` folder and paste it into your Waterfox Default Profile folder (`C:\Users\YOUR USERNAME\AppData\Roaming\Waterfox\Profiles\YOUR PROFILE.default-release`).
 
 ### 4. Add the Custom Script & Styling
-1. Open your profile directory's `chrome` folder (`.../Profiles/<your-profile>/chrome/`).
-2. Download the [userChrome.css](userChrome.css) file or create a file yourself named `userChrome.css` and paste the following code. Make sure the extension is `.css` and not `.txt`.
+1. Open your profile directory's `chrome` folder (`...\Profiles\<your-profile>\chrome\`).
+2. Download the [userChrome.css](userChrome.css) file and move it here or create a file yourself named `userChrome.css` and paste the following code. Make sure the extension is `.css` and not `.txt`.
 <details>
 <summary><b>Click to view userChrome.css code</b></summary>
   
@@ -294,7 +294,37 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
   display: none !important;
 }
 ```
-4. Paste the sidebar hover-reveal and positioning styles into `userChrome.css` and save.
+</details>
+4. Save.
+5. Now download [sidebar-pin.uc.js](sidebar-pin.uc.js) and paste it into the `JS` folder (`...\chrome\JS) or create it yourself with the exact name and paste the following code.
+<details>
+<summary><b>Click to view sidebar-pin.uc.js code</b></summary>
+  
+```css
+(function() {
+  function toggleSidebarPin() {
+    let windowElem = document.getElementById("main-window");
+    if (!windowElem) return;
+    
+    let isPinned = windowElem.getAttribute("sidebar-pinned") === "true";
+    
+    if (isPinned) {
+      windowElem.removeAttribute("sidebar-pinned");
+    } else {
+      windowElem.setAttribute("sidebar-pinned", "true");
+    }
+  }
+
+  window.addEventListener("keydown", function(e) {
+    if (e.altKey && (e.key === "," || e.code === "Comma")) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleSidebarPin();
+    }
+  }, true);
+})();
+```
+</details>
 
 ---
 
