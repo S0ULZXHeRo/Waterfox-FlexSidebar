@@ -47,11 +47,11 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
   <tr>
     <td align="center">
       <b>Before</b><br>
-      <img src="https://github.com/user-attachments/assets/a0441828-5d12-4ba4-a9c5-42382c6d4ad5" width="250" alt="Before Cleanup" />
+      <img src="https://github.com/user-attachments/assets/a0441828-5d12-4ba4-a9c5-42382c6d4ad5" width="270" alt="Before Cleanup" />
     </td>
     <td align="center">
       <b>After</b><br>
-      <img src="https://github.com/user-attachments/assets/c400264b-6e42-4318-bb2a-00794e6ad40a" width="280" alt="After Cleanup" />
+      <img src="https://github.com/user-attachments/assets/c400264b-6e42-4318-bb2a-00794e6ad40a" width="305" alt="After Cleanup" />
     </td>
   </tr>
 </table>
@@ -61,11 +61,13 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
   <tr>
     <td align="center">
       <b>Before (Default Focus Outline)</b><br>
-      <img src="https://github.com/user-attachments/assets/ba810975-0ed5-437b-9656-66540eea6e98" width="600" alt="URL Bar Before" />
+      <img src="https://github.com/user-attachments/assets/ba810975-0ed5-437b-9656-66540eea6e98" width="800" alt="URL Bar Before" />
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <b>After (Clean Address Bar)</b><br>
-      <img src="https://github.com/user-attachments/assets/0963d7fe-d81c-49c3-abca-b078c8b6c411" width="600" alt="URL Bar After" />
+      <img src="https://github.com/user-attachments/assets/0963d7fe-d81c-49c3-abca-b078c8b6c411" width="800" alt="URL Bar After" />
     </td>
   </tr>
 </table>
