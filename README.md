@@ -12,13 +12,13 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
-# 📋 Table of Content
+# 📋 Table of Contents
 
 - [Key Features](#-key-features)
 - [Visual Preview](#-visual-preview)
-- [Additional UI Polish & Fixes](#-additional-ui-polish--fixes)
+- [Additional UI Polish & Fixes](#additional-ui-polish-fixes)
 - [Motivation & Design Philosophy](#-motivation--design-philosophy)
-- [Installation & Prerequisites](#-installation--prerequisites)
+- [Installation & Prerequisites](#installation-prerequisites)
 - [Repository Structure](#-repository-structure)
 - [Known Issues](#-known-issues)
 - [Notes & Disclaimer](#-notes--disclaimer)
@@ -49,6 +49,7 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
+<a name="additional-ui-polish-fixes"></a>
 ## 🛠️ Additional UI Polish & Fixes
 
 * **Container Menu Cleanup:** Stripped the redundant native "New Tab" option from the tab strip `+` menu, leaving a clean, dedicated Container selection panel.
@@ -96,6 +97,7 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
+<a name="installation-prerequisites"></a>
 ## 🛠️ Installation & Prerequisites
 
 Follow these steps from scratch to get the dynamic FlexSidebar script working.
