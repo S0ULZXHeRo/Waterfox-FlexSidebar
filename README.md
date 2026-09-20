@@ -47,7 +47,7 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
   <tr>
     <td align="center">
       <b>Before</b><br>
-      <img src="https://github.com/user-attachments/assets/a0441828-5d12-4ba4-a9c5-42382c6d4ad5" width="280" alt="Before Cleanup" />
+      <img src="https://github.com/user-attachments/assets/a0441828-5d12-4ba4-a9c5-42382c6d4ad5" width="250" alt="Before Cleanup" />
     </td>
     <td align="center">
       <b>After</b><br>
