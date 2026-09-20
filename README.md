@@ -22,9 +22,35 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 ---
 
 ### 🛠️ Additional misc UI Polish & Fixes
-* <img width="405" height="276" alt="Screenshot 2026-09-20 225004" src="https://github.com/user-attachments/assets/a7f1936c-86fb-4dc7-bb81-3a65abfc7ed2" />
-**Container Menu Cleanup:** Stripped the redundant native "New Tab" option from the tab strip `+` menu, leaving a clean, dedicated Container selection panel.
+* **Container Menu Cleanup:** Stripped the redundant native "New Tab" option from the tab strip `+` menu, leaving a clean, dedicated Container selection panel.
+<table>
+  <tr>
+    <td align="center">
+      <b>Before</b><br>
+      <img src="https://github.com/user-attachments/assets/a0441828-5d12-4ba4-a9c5-42382c6d4ad5" width="280" alt="Before Cleanup" />
+    </td>
+    <td align="center">
+      <b>After</b><br>
+      <img src="https://github.com/user-attachments/assets/c400264b-6e42-4318-bb2a-00794e6ad40a" width="280" alt="After Cleanup" />
+    </td>
+  </tr>
+</table>
 
+* **Streamlined Address Bar:** Removed the default blue focus outline from the address bar, keeping the URL input clean and seamless when focused or opening a new tab.
+<table>
+  <tr>
+    <td align="center">
+      <b>Before (Default Focus Outline)</b><br>
+      <img src="https://github.com/user-attachments/assets/ba810975-0ed5-437b-9656-66540eea6e98" width="600" alt="URL Bar Before" />
+    </td>
+    <td align="center">
+      <b>After (Clean Address Bar)</b><br>
+      <img src="https://github.com/user-attachments/assets/0963d7fe-d81c-49c3-abca-b078c8b6c411" width="600" alt="URL Bar After" />
+    </td>
+  </tr>
+</table>
+
+---
 
 ## 📸 Visual Preview
 
