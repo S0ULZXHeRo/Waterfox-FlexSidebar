@@ -364,6 +364,7 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 ---
 
 ## 🤝 Notes & Disclaimer
+* **First of all, a big thank you to **Alex Kontos** for creating and maintaining [Waterfox](https://www.waterfox.net/).**
 
 * **AI-Assisted Code:** Both `userChrome.css` and `sidebar-pin.uc.js` were built entirely with AI assistance to fit my personal workflow. I am not an experienced developer myself, but I'm sharing this publicly in the spirit of open-source—hoping it helps others, serves a good purpose, or gives someone a solid starting point to build upon!
 * **Bugs & Edge Cases:** Since this hasn't been tested across every single Firefox extension or layout setup, you might encounter visual bugs or glitches. 
