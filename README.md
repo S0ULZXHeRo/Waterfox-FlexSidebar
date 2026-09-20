@@ -21,6 +21,11 @@ Keep your workspace minimal with a floating hover-reveal rail by default, or loc
 
 ---
 
+### 🛠️ Additional misc UI Polish & Fixes
+* <img width="405" height="276" alt="Screenshot 2026-09-20 225004" src="https://github.com/user-attachments/assets/a7f1936c-86fb-4dc7-bb81-3a65abfc7ed2" />
+**Container Menu Cleanup:** Stripped the redundant native "New Tab" option from the tab strip `+` menu, leaving a clean, dedicated Container selection panel.
+
+
 ## 📸 Visual Preview
 
 * ### Hover-Reveal Mode (Default)
