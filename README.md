@@ -359,7 +359,7 @@ Since custom shortcuts (`Alt + ,`) and dynamic layout reflows require JavaScript
 
 ## 🐛 Known Issues
 
-* **Browser Addon Themes:** Enabling any custom Firefox or Waterfox browser theme (or add-on theme) turns the sidebar/icon rail transparent. The functionality and shortcuts remain fully operational, but visual background alignment breaks. It is recommended to use standard/default themes.
+* **Transparent Broken Sidebar:** Enabling any custom Firefox or Waterfox browser theme (or add-on theme) as well as Photon and Proton layouts turn the sidebar/icon rail transparent.  The functionality and shortcuts remain fully operational, but visual background alignment breaks. It is recommended to use standard/default themes with Nova layout.
 
 ---
 
